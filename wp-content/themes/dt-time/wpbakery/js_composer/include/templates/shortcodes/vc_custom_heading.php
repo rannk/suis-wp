@@ -8,7 +8,7 @@ $subsets  = '';
 if ( is_array( $settings ) && ! empty( $settings ) ) {
 	$subsets = '&subset=' . implode( ',', $settings );
 }
-wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
+wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.css.network/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
 $output .= '<div class="' . $css_class . '" >';
 $output .= '<' . $font_container_data['values']['tag'] . ' style="' . implode( ';', $styles ) . '">';
 $output .= $text;
