@@ -1,3 +1,7 @@
-*
+/*
 !.gitignore
-!wp-content\themes\dt-time
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/dt-time/
