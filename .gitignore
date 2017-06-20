@@ -3,5 +3,8 @@
 !/wp-content/
 /wp-content/*
 !/wp-content/themes/
+!/wp-content/plugins/
 /wp-content/themes/*
 !/wp-content/themes/dt-time/
+/wp-content/plugins/*
+!/wp-content/plugins/wp-job-manager/
