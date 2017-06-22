@@ -25,17 +25,3 @@ if ( $topbar_soc_icons ) {
     echo '</div>';
 }
 
-
-////////////////////
-// Top Bar text //
-////////////////////
-
-$top_text = of_get_option('top_bar-text', '');
-if ( $top_text ) :
-?>
-
-	<div class="wf-float-left">
-		<?php echo wpautop($top_text); ?>
-	</div>
-
-<?php endif; // top text

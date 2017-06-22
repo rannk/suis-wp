@@ -16,3 +16,16 @@ if ( dt_is_woocommerce_enabled() && of_get_option( 'general-woocommerce_show_min
 ////////////////////
 
 presscore_nav_menu_list('top', 'right');
+////////////////////
+// Top Bar text //
+////////////////////
+
+$top_text = of_get_option('top_bar-text', '');
+if ( $top_text ) :
+    ?>
+
+    <div class="wf-float-right">
+        <?php echo wpautop($top_text); ?>
+    </div>
+
+<?php endif; // top text
