@@ -10,12 +10,9 @@ if ( dt_is_woocommerce_enabled() && of_get_option( 'general-woocommerce_show_min
 	get_template_part('inc/mod-woocommerce/mod-woocommerce', 'mini-cart');
 }
 
+
 ////////////////////
-// Social icons //
+// Top bar menu //
 ////////////////////
 
-$topbar_soc_icons = presscore_get_topbar_social_icons();
-if ( $topbar_soc_icons ) {
-
-	echo $topbar_soc_icons;
-}
+presscore_nav_menu_list('top', 'right');

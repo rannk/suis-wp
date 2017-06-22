@@ -15,10 +15,16 @@ if ( of_get_option('top_bar-contact_show', 1) ) : ?>
 <?php endif; // mini contacts
 
 ////////////////////
-// Top bar menu //
+// Social icons //
 ////////////////////
 
-presscore_nav_menu_list('top', 'left');
+$topbar_soc_icons = presscore_get_topbar_social_icons();
+if ( $topbar_soc_icons ) {
+    echo '<div class="wf-float-left">';
+    echo $topbar_soc_icons;
+    echo '</div>';
+}
+
 
 ////////////////////
 // Top Bar text //
