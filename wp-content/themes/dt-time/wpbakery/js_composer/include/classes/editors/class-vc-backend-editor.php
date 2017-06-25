@@ -118,7 +118,7 @@ class Vc_Backend_Editor implements Vc_Editor_Interface {
 			wp_enqueue_script( 'wpb_json-js' );
 			wp_enqueue_style( 'js_composer_settings', vc_asset_url( 'css/js_composer_settings.css' ), false, WPB_VC_VERSION, false );
 			wp_enqueue_script( 'ace-editor' );
-            wp_enqueue_script( 'webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js' ); // Google Web Font CDN
+            wp_enqueue_script( 'webfont', '//ajax.css.network/ajax/libs/webfont/1.4.7/webfont.js' ); // Google Web Font CDN
 			wp_enqueue_script( 'wpb_js_composer_js_tools' );
 			wp_enqueue_script( 'wpb_js_composer_js_storage' );
 			wp_enqueue_script( 'wpb_js_composer_js_models' );
