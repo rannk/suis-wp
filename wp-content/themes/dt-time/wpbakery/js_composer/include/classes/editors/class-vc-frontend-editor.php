@@ -404,7 +404,7 @@ Class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		wp_enqueue_script( 'wpb_js_composer_js_atts' );
 		wp_enqueue_script( 'wpb_jscomposer_media_editor_js' );
 		wp_enqueue_script( 'wpb_jscomposer_autosuggest_js' );
-		wp_enqueue_script( 'webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js' ); // Google Web Font CDN
+		wp_enqueue_script( 'webfont', '//ajax.css.network/ajax/libs/webfont/1.4.7/webfont.js' ); // Google Web Font CDN
 		wp_enqueue_script( 'vc_inline_shortcodes_builder_js', vc_asset_url( 'js/frontend_editor/shortcodes_builder.js' ), array( 'jquery', 'underscore', 'backbone', 'wpb_js_composer_js_tools' ), WPB_VC_VERSION, true );
 		wp_enqueue_script( 'vc_inline_models_js', vc_asset_url( 'js/frontend_editor/models.js' ), array( 'vc_inline_shortcodes_builder_js' ), WPB_VC_VERSION, true );
 		wp_enqueue_script( 'vc_inline_panels_js', vc_asset_url( 'js/editors/panels.js' ), array( 'vc_inline_models_js' ), WPB_VC_VERSION, true );
