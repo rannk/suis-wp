@@ -514,7 +514,7 @@ function dt_get_google_fonts( $font = '', $effect = '' ) {
 		$protocol = "https";
 	}
 	?>
-	<link rel="stylesheet" type="text/css" href="<?php echo $protocol; ?>://fonts.googleapis.com/css?family=<?php echo str_replace( ' ', '+', $font ) . $effect; ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo $protocol; ?>://fonts.css.network/css?family=<?php echo str_replace( ' ', '+', $font ) . $effect; ?>">
 	<?php
 }
 
@@ -543,7 +543,7 @@ function dt_make_web_font_uri( $font, $effect = '' ) {
 
 	$protocol = is_ssl() ? "https" : "http";
 
-	$uri = $protocol . '://fonts.googleapis.com/css?family=' . str_replace( ' ', '+', $font ) . $effect;
+	$uri = $protocol . '://fonts.css.network/css?family=' . str_replace( ' ', '+', $font ) . $effect;
 	return $uri;
 }
 
