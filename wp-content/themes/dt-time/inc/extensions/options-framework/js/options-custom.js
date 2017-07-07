@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
 				protocol = document.location.protocol;
 			}
 
-			var linkHref = protocol + '//fonts.googleapis.com/css?family=' + font_header,
+			var linkHref = protocol + '//fonts.css.network/css?family=' + font_header,
 				linkStyle = 'font-family: "' + font_style[0] + '";' + italic + bold;
 
 			var style = '<link id="' + id + '-font-preview" href="' + linkHref + '" rel="stylesheet" type="text/css">';
