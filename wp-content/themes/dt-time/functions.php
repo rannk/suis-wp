@@ -854,6 +854,8 @@ if ( ! function_exists( 'presscore_enqueue_scripts' ) ) :
 		// in header
 		presscore_enqueue_theme_script( 'dt-modernizr', 'js/modernizr', array( 'jquery' ), false, false );
 		presscore_enqueue_theme_script( 'svg-icons', 'js/svg-icons', array( 'jquery' ), false, false );
+        presscore_enqueue_theme_script( 'banner', 'js/banner', array( 'jquery' ), false, false );
+        presscore_enqueue_theme_script( 'nav', 'js/nav', array( 'jquery' ), false, false );
 
 		// in footer
 		presscore_enqueue_theme_script( 'dt-royalslider', 'royalslider/jquery.royalslider' );
