@@ -22,3 +22,17 @@ Tags: one-column, two-columns, right-sidebar, flexible-width, custom-menu, edito
 .sticky,
 .gallery-caption,
 .bypostauthor {}
+
+#share {
+	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	float:left;
+}
+
+#share li  {
+	float:left;
+	margin:6px 0 0 5px;
+	padding:4px 0 4px 8px;
+	list-style-type:none;
+	background:none;
+}
