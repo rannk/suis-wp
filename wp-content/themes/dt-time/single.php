@@ -38,3 +38,4 @@ get_header(); ?>
 		<?php endif; // content is visible ?>
 
 <?php get_footer(); ?>
+<script src="/wp-content/themes/dt-time/js/shareButtons.js"></script>

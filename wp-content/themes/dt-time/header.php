@@ -85,5 +85,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<div class="wf-container-main">
 
 				<?php do_action( 'presscore_before_content' ); ?>
-
 <?php endif; ?>
+<script src="/wp-content/themes/dt-time/js/gallaryControl.js"></script>
+<script src="/wp-content/themes/dt-time/js/campusMenu.js"></script>
