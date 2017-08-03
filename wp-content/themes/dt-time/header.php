@@ -86,5 +86,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 				<?php do_action( 'presscore_before_content' ); ?>
 				<script src="js/shareButtons.js"></script>
+				<script src="js/gallaryControl.js"></script>
 
 <?php endif; ?>
