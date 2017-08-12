@@ -86,5 +86,5 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 				<?php do_action( 'presscore_before_content' ); ?>
 <?php endif; ?>
-<script src="www.suis.com.cn/wp-content/themes/dt-time/js/shareButtons.js"></script>
-<script src="www.suis.com.cn/wp-content/themes/dt-time/js/gallaryControl.js"></script>
+<script src="./wp-content/themes/dt-time/js/shareButtons.js"></script>
+<script src="./wp-content/themes/dt-time/js/gallaryControl.js"></script>
