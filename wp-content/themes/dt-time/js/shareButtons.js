@@ -1,4 +1,5 @@
   var shareNode = '<div class="bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a></div>';
+  console.log("shareNode ready");
   if (document.querySelector("#fancy-header .wf-table")) {
     document.querySelector("#fancy-header .wf-table").innerHTML += shareNode;
     window._bd_share_config = {
