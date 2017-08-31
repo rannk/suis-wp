@@ -1,0 +1,2 @@
+1.修改copy_site.php连接数据库账号信息
+	命令执行php copy_site.php 文件，需输入1个参数,例如站点2：php copy_site.php 2
