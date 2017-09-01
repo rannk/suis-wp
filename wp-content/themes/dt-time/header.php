@@ -40,6 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<style type="text/css" id="static-stylesheet"></style>
+    <link rel="stylesheet"  href="/wp-content/themes/dt-time/css/suis_custom.css" type="text/css" media="all">
 	<?php
 	if ( ! is_preview() ) {
 

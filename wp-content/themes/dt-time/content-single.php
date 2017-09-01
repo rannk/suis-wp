@@ -15,6 +15,16 @@ add_filter( 'presscore_post_navigation-args', 'presscore_show_navigation_next_pr
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php
+    $post_meta = presscore_new_posted_on( 'tags' );
+
+    if ( $post_meta ) {
+        printf(
+            '<div class="post-meta wf-table" style="margin-bottom: 60px">%s</div>',
+            $post_meta ? $post_meta : ''
+        );
+    }
+    ?>
 
 	<?php do_action('presscore_before_post_content'); ?>
 
