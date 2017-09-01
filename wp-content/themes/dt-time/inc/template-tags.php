@@ -416,7 +416,11 @@ if ( ! function_exists( 'presscore_fancy_header_controller' ) ) :
 		if ( $config->get('fancy_header_title') ) {
 			$title .= '<h1 class="fancy-title"';
 			if ( $title_color_esc ) $title .= ' style="color: ' . $title_color_esc . '"';
-			$title .= '><div class="date">' . get_the_date() . '</div>' . wp_kses_post( $config->get('fancy_header_title') ) . '</h1>';
+            $title .= ">";
+            if(!$config->get('page_id')) {
+                $title .= '<div class="date">' . get_the_date() . '</div>';
+            }
+			$title .= wp_kses_post( $config->get('fancy_header_title') ) . '</h1>';
 		}
 
 		if ( $config->get('fancy_header_subtitle') ) {

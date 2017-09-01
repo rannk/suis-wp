@@ -85,15 +85,17 @@ if ( 'wide' == $preview_mode ) {
 	?>
 
 	<div class="blog-content wf-td">
+        <?php echo presscore_get_post_meta_wrap( presscore_get_blog_post_date(), 'post-format' ); ?>
+
 		<h2 class="entry-title">
 			<a href="<?php the_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h2>
 
 		<?php echo presscore_new_posted_on( 'post' ); ?>
 
-		<?php presscore_the_excerpt(); ?>
+		<?php //presscore_the_excerpt(); ?>
 
-		<?php echo presscore_get_post_meta_wrap( presscore_get_blog_post_date(), 'post-format' ); ?>
+
 
 		<?php echo presscore_post_details_link(); ?>
 
