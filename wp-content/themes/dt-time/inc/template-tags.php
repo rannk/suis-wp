@@ -286,7 +286,7 @@ if ( ! function_exists( 'presscore_post_meta_new_controller' ) ) :
 				}
 
 				if ( $post_tags ) {
-					add_filter('presscore_new_posted_on-post', 'presscore_get_post_tags', 17);
+					add_filter('presscore_new_posted_on-tags', 'presscore_get_post_tags', 17);
 				}
 
 			} elseif ( !$post_format_icon ) {
@@ -416,7 +416,7 @@ if ( ! function_exists( 'presscore_fancy_header_controller' ) ) :
 		if ( $config->get('fancy_header_title') ) {
 			$title .= '<h1 class="fancy-title"';
 			if ( $title_color_esc ) $title .= ' style="color: ' . $title_color_esc . '"';
-			$title .= '>' . wp_kses_post( $config->get('fancy_header_title') ) . '</h1>'; 
+			$title .= '><div class="date">' . get_the_date() . '</div>' . wp_kses_post( $config->get('fancy_header_title') ) . '</h1>';
 		}
 
 		if ( $config->get('fancy_header_subtitle') ) {
