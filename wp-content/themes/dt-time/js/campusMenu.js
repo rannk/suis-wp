@@ -8,6 +8,8 @@ jQuery(document).ready(function () {
   }
   jQuery("#main-nav li.menu-item-608").append(clstr)
   camLbindEvent();
+  handleOver(0);
+  handleOver(4);
 })
 
 function handleOver(index) {
@@ -18,14 +20,18 @@ function handleOver(index) {
   jQuery(".listTabs_item:eq(" + (index + 4) + ")").addClass("listTabs_itemActive");
   switch (index) {
     case 0:
+    case 4:
       break;
     case 1:
+    case 5:
       disableCampus([2, 11, 4, 13]);
       break;
     case 2:
+    case 6:
       disableCampus([0, 9]);
       break;
     case 3:
+    case 7:
       disableCampus([0, 9, 3, 12]);
       break;
   }
