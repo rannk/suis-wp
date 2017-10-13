@@ -32,7 +32,7 @@ function handleOver(index) {
       break;
     case 3:
     case 7:
-      disableCampus([1, 10, 2, 11]);
+      disableCampus([1, 10, 2, 11, 4, 13]);
       break;
   }
 }
