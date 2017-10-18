@@ -5,7 +5,7 @@ $conn = mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die ("数据连接错误!!
 mysql_select_db(DB_NAME,$conn);
 
 $site_num=ceil($argv[1]);
-$from_site_num = ceil($argv[2]);
+$from_site_num = ceil($argv[2]); 
 //提取option表不需要改变的字段
 $option_table="wp_".$site_num."_options";
 $copy_field="siteurl,home,blogname,blogdescription,admin_email,start_of_week,timezone_string,date_format,WPLANG,time_format,zh_cn_l10n_icp_num,";
